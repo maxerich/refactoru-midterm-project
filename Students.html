@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Demo</title>
+</head>
+<body class="body-color">
+	<div class="navbar navbar-default navbar-static-top" id="topnav-2" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+      		<a class="navbar-brand" href="file:///Users/student/Desktop/My%20Midterm%20Project/profile.html" id="colored-brand">College Contracts</a>
+    		</div>
+    		<div class="navbar-collapse collapse">
+    			<ul class="nav navbar-nav">
+					<li class="nav-links"><a id="colored-links" href="#">STUDENTS</a></li>
+					<li class="nav-links"><a id="colored-links" href="#">SPONSORS</a></li>
+					<li class="nav-links"><a id="colored-links" href="#">WHAT WE DO</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav-links"><a id="colored-links" href="#">Sign In</a></li>
+					<li class="btn btn-default btn-xs"><a href="file:///Users/student/Desktop/My%20Midterm%20Project/signup.html">Sign Up</a></li>
+				</ul>
+    		</div>
+		</div>
+	</div>
+	<div class="container students-container">
+	<legend><h1> Students </h1></legend>
+	<div class="sort-students">	
+		<h3 class="sort-students-words"> Sort by:</h3> 
+		<select class="form-control col-md-offset-1 sort-students-state" name="state" id="state">
+								<option>State</option>
+								<option>Alabama</option>
+								<option>Alaska</option>
+								<option>Arizona</option>
+								<option>Arkansas</option>
+								<option>California</option>
+								<option>Colorado</option>
+								<option>Connecticut</option>
+								<option>Delaware</option>
+								<option>Florida</option>
+								<option>Georgia</option>
+								<option>Hawaii</option>
+								<option>Idaho</option>
+								<option>Illinois</option>
+								<option>Indiana</option>
+								<option>Iowa</option>
+								<option>Kansas</option>
+								<option>Kentucky</option>
+								<option>Louisiana</option>
+								<option>Maine</option>
+								<option>Maryland</option>
+								<option>Massachusetts</option>
+								<option>Michigan</option>
+								<option>Minnesota</option>
+								<option>Mississippi</option>
+								<option>Missouri</option>
+								<option>Montana</option>
+								<option>Nebraska</option>
+								<option>Nevada</option>
+								<option>New Hampshire</option>
+								<option>New Jersey</option>
+								<option>New Mexico</option>
+								<option>New York</option>
+								<option>North Carolina</option>
+								<option>North Dakota</option>
+								<option>Ohio</option>
+								<option>Oklahoma</option>
+								<option>Oregon</option>
+								<option>Pennsylvania</option>
+								<option>Rhode Island</option>
+								<option>South Carolina</option>
+								<option>South Dakota</option>
+								<option>Tennessee</option>
+								<option>Texas</option>
+								<option>Utah</option>
+								<option>Vermont</option>
+								<option>Virginia</option>
+								<option>Washington</option>
+								<option>West Virginia</option>
+								<option>Wisconsin</option>
+								<option>Wyoming</option>
+						</select>
+		<select class="form-control col-md-offset-1 sort-students-state" name="state" id="state">
+								<option>Major</option>
+								<option>Accounting</option>
+								<option>Aerospace Engineering</option>
+								<option>Agriculture</option>
+								<option>Anthropology</option>
+								<option>Art History</option>
+								<option>Biology</option>
+								<option>Business Management</option>
+								<option>Chemical Engineering</option>
+								<option>Chemistry</option>
+								<option>Civil Engineering</option>
+								<option>Communications</option>
+								<option>Computer Engineering</option>
+								<option>Computer Science</option>
+								<option>Construction</option>
+								<option>Criminal Justice</option>
+								<option>Drama</option>
+								<option>Economics</option>
+								<option>Education</option>
+								<option>Electrical Engineering</option>
+								<option>English</option>
+								<option>Film</option>
+								<option>Finance</option>
+								<option>Forestry</option>
+								<option>Geography</option>
+								<option>Geology</option>
+								<option>Graphic Design</option>
+
+
+						</select>	
+		</div>
+		<div class="row row-append">
+			<!-- <div class="col-md-4 profile-parent">
+				<div class="profile-container">
+					<img src="http://lorempixel.com/250/200/people/" class="profile-image">
+					<div class="pic-border">
+						<h4><span class="profile-firstname">Max</span> <span class="profile-lastname"> Richman</span></h4>
+						<h5><span class="profile-city">city, </span><span class="profile-state">state</span></h5>
+						<h5><span class="profile-college">University of College</span></h5>
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+					</div>
+				</div> -->
+
+
+					<!-- click container to open the modal 	 -->			
+					<script id="new-profile" type="text/x-handlebars-template">
+					<div class="col-md-4 profile-parent" data-id={{id}}>
+						<div class="profile-container" data-toggle="modal" data-target="#myModal"> 
+							<img src="http://lorempixel.com/250/200/people/" class="profile-image">
+							<div class="pic-border"> 
+								<h4><span class="profile-firstname">{{firstname}}</span> <span class="profile-lastname">{{lastname}}</span></h4>
+								<h5><span class="profile-city">{{city}}, </span><span class="profile-state">{{state}}</span></h5>
+								<h5><span class="profile-college">{{college}}</span></h5>
+								<button type="button" class="close delete" aria-hidden="true">&times;</button>
+							</div>
+					</div>
+				</div>
+				</script>
+			</div>
+		</div>
+
+<!-- Modal -->
+
+<div class="modal fade modal-fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h5>Student Profile</h5>
+
+      </div>
+      <div class="modal-body">
+		  		 <script id="full-profile" type="text/x-handlebars-template">
+					<div class="profile-parent modal-parent" data-id={{id}}>
+							<img src="http://lorempixel.com/250/200/people/" class="profile-image">
+								<h4>Name:  <span class="profile-firstname">{{firstname}}</span> <span class="profile-lastname">{{lastname}}</span></h4>
+								<h5>DOB: <span class="profile-college">{{month}} {{day}}th, {{year}} </span></h5>
+								<h5><span class="profile-city">{{city}}, </span><span class="profile-state">{{state}}</span></h5>
+								<h5><span class="profile-college">{{college}}</span></h5>
+								<h5><span class="profile-college">{{highschool}}</span></h5>
+								<h5>GPA: <span class="profile-college">{{gpa}}</span></h5>
+								<h5>Class Rank: <span class="profile-college">{{classrank}}</span></h5>
+								<h5>Seeking: <span class="profile-college">{{cost}}</span></h5>	
+								<p>Essay: <span class="profile-college">{{essay}}</span></p>
+							</div>
+				</script>
+			
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+	</div>
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="utility.js"></script>
+<script src="main.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+

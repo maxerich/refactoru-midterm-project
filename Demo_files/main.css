@@ -1,0 +1,120 @@
+.body-color {
+	background-color: #EEEEEE;
+}
+
+#topnav {
+	background-color: #1F3A93;
+	padding: 8px;
+	margin-bottom: -19px;
+}
+#topnav-2 {
+	background-color: #1F3A93;
+	padding: 8px;
+}
+#colored-brand {
+	color: white;
+	font-size: 25px;
+	font-family: brandon-grotesque, sans-serif;
+}
+#colored-links {
+	color: white;
+	font-size: 18px;
+}
+.carousel-image {
+	width: 100%;
+	max-height: 400px;
+}
+#carousel-inside {
+	max-height: 400px;
+	width: 100%;
+}
+
+#carousel-words {
+	color: white;
+}
+.featurette-divider {
+	margin: 80px 0px;
+}
+.featurette-heading {
+	margin-top: 120px;
+}
+#row-featurette {
+	margin-top: 50px;
+}
+#form-measure {
+	width: 13%;
+}
+#form-measure2 {
+	width: 50%;
+}
+#essay {
+	margin-left: 13.4%;
+	border-radius: 7px;
+	border: none;
+	margin-bottom: 20px;
+}
+#myspan {
+	width: 3px;
+}
+#form-submit-button {
+	background-color: #1F3A93;
+	color: white;
+}
+.students-container {
+	background-color: #C5EFF7;
+	border-radius: 7px;
+}
+.profile-container {
+	text-align: center;
+	border: 2px solid black;
+	margin-bottom: 20px;
+	border-radius: 7px;
+	display: inline-block;
+	box-shadow: 5px;
+}
+.profile-parent {
+	text-align: center;
+}
+.pic-border {
+	border: 2px solid black;
+	box-shadow: 5px;
+	background-color: #EEEEEE;
+}
+
+
+/*header {
+	background-color: #B0D1B0;
+	box-shadow: 0 0 10px 0;
+	color: white;
+	text-decoration: none;
+	position: relative;
+}
+*/
+
+
+
+
+
+/*.logo {
+	 width: 121px;
+	 height: 64px;
+}
+.mainimage {
+	display: inline-block;
+	padding: 17px 17px 0px 17px;
+
+}
+.navigation {
+	display: inline-block;
+	vertical-align: top;
+}
+.nav-links {
+	display: inline;
+	font-size: 30px;
+	padding: 15px;
+}
+.nav-links a {
+	text-decoration: none;
+	color: white;
+	font-family: Cabin;
+}*/
