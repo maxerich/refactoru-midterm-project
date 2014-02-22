@@ -36,7 +36,7 @@
 	<legend><h1> Students </h1></legend>
 	<div class="sort-students">	
 		<h3 class="sort-students-words"> Sort by:</h3> 
-		<select class="form-control col-md-offset-1 sort-students-state" name="state" id="state">
+		<select class="form-control col-md-offset-1 sort-students-state" name="state-selector" id="state-selector">
 								<option>State</option>
 								<option>Alabama</option>
 								<option>Alaska</option>
@@ -89,8 +89,8 @@
 								<option>Wisconsin</option>
 								<option>Wyoming</option>
 						</select>
-		<select class="form-control col-md-offset-1 sort-students-state" name="state" id="state">
-								<option>Major</option>
+		<select class="form-control col-md-offset-1 sort-students-state" name="major-selector" id="major-selector">
+								<option>Probable Major</option>
 								<option>Accounting</option>
 								<option>Aerospace Engineering</option>
 								<option>Agriculture</option>
@@ -117,11 +117,34 @@
 								<option>Geography</option>
 								<option>Geology</option>
 								<option>Graphic Design</option>
-
-
+								<option>Health Care Administration</option>
+								<option>History</option>
+								<option>Hospitality & Tourism</option>
+								<option>Industrial Engineering</option>
+								<option>Information Technology (IT)</option>
+								<option>Interior Design</option>
+								<option>International Relations</option>
+								<option>Journalism</option>
+								<option>Marketing Information Systems (MIS)</option>
+								<option>Marketing</option>
+								<option>Math</option>
+								<option>Mechanical Engineering</option>
+								<option>Music</option>
+								<option>Nursing</option>
+								<option>Nutrition</option>
+								<option>Philosophy</option>
+								<option>Physician Assistant</option>
+								<option>Physics</option>
+								<option>Political Science</option>
+								<option>Psychology</option>
+								<option>Religion</option>
+								<option>Sociology</option>
+								<option>Spanish</option>
+								<option>Womens Studies</option>
+								<option>Other</option>
 						</select>	
 		</div>
-		<div class="row row-append">
+		<div class="row row-append" id="profile-row">
 			<!-- <div class="col-md-4 profile-parent">
 				<div class="profile-container">
 					<img src="http://lorempixel.com/250/200/people/" class="profile-image">
@@ -172,6 +195,7 @@
 								<h5><span class="profile-college">{{highschool}}</span></h5>
 								<h5>GPA: <span class="profile-college">{{gpa}}</span></h5>
 								<h5>Class Rank: <span class="profile-college">{{classrank}}</span></h5>
+								<h5>Possible Major: <span class="profile-college">{{major}}</span></h5>
 								<h5>Seeking: <span class="profile-college">{{cost}}</span></h5>	
 								<p>Essay: <span class="profile-college">{{essay}}</span></p>
 							</div>

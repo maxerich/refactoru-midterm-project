@@ -47,8 +47,9 @@ var getText = function(e) {
 	var gpa = $("#gpa").val();
 	var classRank = $("#classrank").val();
 	var college = $("#college").val();
+	var major = $("#major").val();
 	var cost = $("#cost").val();
-	var essay = $("#essay").val()		
+	var essay = $("#essay").val();		
 	var newStudent = {
 		firstname: firstName,
 		lastname: lastName,
@@ -63,6 +64,7 @@ var getText = function(e) {
 		gpa: gpa,
 		classrank: classRank,
 		college: college,
+		major: major,
 		cost: cost,
 		essay: essay,
 		id: generateID(),
@@ -141,6 +143,51 @@ $(".profile-parent").click(function() {
 
 
 
+
+// Sort through the students by choosing the state
+$("#state-selector").change(function() {
+	var selected = $(this).find("option:selected").val();
+	console.log(selected);
+	$(".profile-parent").addClass("remove")
+	if(selected === "State") {
+		$(".profile-parent").removeClass("remove");
+		}
+	for(var i=0; i<students.length; i++) {
+		if(students[i].state === selected) {
+			var id = students[i].id
+			$(".profile-parent[data-id="+id+"]").removeClass("remove");
+		}
+	}
+});
+
+//Sort through the students by major
+$("#major-selector").change(function() {
+	var selected= $(this).find("option:selected").val();
+	console.log(selected);
+	$(".profile-parent").addClass("remove");
+	if(selected === "Probable Major") {
+		$(".profile-parent").removeClass("remove");
+	}
+	for(var i=0; i<students.length; i++) {
+		if(students[i].major === selected) {
+			var id = students[i].id;
+			$(".profile-parent[data-id="+id+"]").removeClass("remove");
+		}
+	}
+});
+
+
+$(document).ready(function(){
+    //Handles menu drop down
+    $('#dropdown-menu').find('form').click(function (e) {
+        e.stopPropagation();
+    });
+});
+
+
+
+
+
 $(document).on("click", ".delete", function(e) {
 	e.stopPropagation()
 	var original = JSON.parse(localStorage.students)
@@ -173,19 +220,6 @@ $(document).on("click", ".delete", function(e) {
 
 
 });
-
-
-
-// var arrOfOne = filter(arrOfObj, function(item) {
-// 		 if(item.id === dataID) {
-// 		 	return true
-// 		 }
-// 	})
-// 	console.log(arrOfOne)
-
-
-
-
 
 
 

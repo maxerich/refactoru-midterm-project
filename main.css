@@ -1,14 +1,32 @@
 .body-color {
-	background-color: #EEEEEE;
+	background-color: white;   /* #EEEEEE */
 }
-
+.email-color {
+	background-color: #F21E41;
+	color: white;
+	padding: 25px;
+}
+#signup-btn {
+	background-color: #BC4018;
+	color: white;
+}
+.footer {
+	padding: 20px;
+}
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+	margin-top: 35px;
+}
 #topnav {
-	background-color: #1F3A93;
+	background-color: #06a9ef;   /* 1F3A93*/
 	padding: 8px;
 	margin-bottom: -19px;
 }
 #topnav-2 {
-	background-color: #1F3A93;
+	background-color:  #06a9ef;
 	padding: 8px;
 }
 #colored-brand {
@@ -19,6 +37,16 @@
 #colored-links {
 	color: white;
 	font-size: 18px;
+}
+#colored-signin {
+	color: white;
+	font-size: 18px;
+	background-color:  #06a9ef;
+}
+#dropdown-menu {
+	margin-top: 12px;
+	padding: 15px;
+	min-width: 250px;
 }
 .carousel-image {
 	width: 100%;
@@ -34,6 +62,9 @@
 }
 .featurette-divider {
 	margin: 80px 0px;
+}
+.featurette-divider-2 {
+	margin: 80px 0px 0px 0px;
 }
 .featurette-heading {
 	margin-top: 120px;
@@ -96,6 +127,9 @@
 .learn-more {
 	color: white;
 	text-decoration: none;
+}
+.remove {
+	display: none;
 }
 
 /*header {
